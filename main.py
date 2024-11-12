@@ -1,6 +1,7 @@
 class Motor:
-    def __init__(self, numeroRegistro, tipo):
-        self.registro = numeroRegistro
+    def __init__(self, numeroCilindro, tipo, registro):
+        self.registro = registro
+        self.numeroCilindro = numeroCilindro
         self.tipo = tipo
 
     def cambiarRegistro(self, nuevoRegistro:int):
